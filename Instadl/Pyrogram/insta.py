@@ -12,7 +12,7 @@ from Mikobot import app
 DOWNLOADING_STICKER_ID = (
     "CAACAgIAAxkBAAEDv_xlJWmh2-fKRwvLywJaFeGy9wmBKgACVQADr8ZRGmTn_PAl6RC_MAQ"
 )
-API_URL = "https://karma-api2.vercel.app/instadl"  # Replace with your actual API URL
+API_URL = "https://karma-api2.vercel.app/instadl"  # API URL
 
 
 @app.on_message(
