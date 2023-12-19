@@ -7,7 +7,7 @@ from telegram import Update
 from telegram.ext import CommandHandler, ContextTypes
 from httpx import AsyncClient, Timeout
 
-from Mikobot import function
+from Mikobot import dispatcher
 
 # <=======================================================================================================>
 
@@ -70,7 +70,7 @@ async def instadl_command_handler(update: Update, context: ContextTypes.DEFAULT_
         await downloading_sticker.delete()
 
 
-function(
+dispatcher.add_handler(
     CommandHandler(["ig", "instagram", "insta", "instadl"], instadl_command_handler)
 )
 # <================================================ END =======================================================>
